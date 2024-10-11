@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+
+:root {
+  --color-primary-Purple-b: hsl(254, 88%, 90%);
+  --color-primary-Purple: hsl(256, 67%, 59%);
+  --color-primary-Yellow: hsl(31, 66%, 93%);
+  --color-Yellow: hsl(39, 100%, 71%);
+  --color-White: hsl(0, 0%, 100%);
+  --color-Black: hsl(0, 0%, 7%);
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.8rem;
+  line-height: 1.8rem;
+  background-color: #eeeeee;
+  max-width: 144rem;
+  min-height: calc(100vh - 2 * 4vw);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 500;
+}
+.color-water-white {
+  color: var(--color-primary-link-water-white);
+}
+.heading-primary-large {
+  color: var(--color-White);
+  font-size: 5.2rem;
+  line-height: 4.8rem;
+  @media only screen and (max-width: $bp-large) {
+    font-size: 4rem;
+    line-height: 3.8rem;
+  }
+  @media only screen and (max-width: $bp-smallest) {
+    font-size: 3.8rem;
+    line-height: 3.8rem;
+  }
+}
+
+.heading-primary-small {
+  color: var(--color-Black);
+  font-size: 4.2rem;
+  line-height: 3.8rem;
+  @media only screen and (max-width: $bp-large) {
+    font-size: 3rem;
+    line-height: 2.8rem;
+  }
+  @media only screen and (max-width: $bp-smallest) {
+    font-size: 2.8rem;
+    line-height: 2.8rem;
+  }
+}
+
+.heading-secondary-small {
+  color: var(--color-Black);
+  letter-spacing: 0px;
+  font-size: 3.2rem;
+  line-height: 2.8rem;
+  @media only screen and (max-width: $bp-large) {
+    font-size: 2.4rem;
+    line-height: 2rem;
+  }
+  @media only screen and (max-width: $bp-smallest) {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+}
+.heading-tertiary-small {
+  font-size: 3rem;
+  line-height: 2.6rem;
+  @media only screen and (max-width: $bp-large) {
+    font-size: 2rem;
+    line-height: 1.8rem;
+  }
+}
+
+.color-white {
+  color: var(--color-White);
+}
+
+.heading-secondary-extend {
+  color: var(--color-secondary-san-juan-blue) !important;
+}
+
+p {
+  color: var(--color-White);
+  font-size: 2rem;
+  line-height: 2.2rem;
+  font-weight: 500;
+  @media only screen and (max-width: $bp-large) {
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+  }
+  @media only screen and (max-width: $bp-smallest) {
+    font-size: 1.8rem;
+    line-height: 2rem;
+  }
+}

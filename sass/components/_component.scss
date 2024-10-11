@@ -1,0 +1,185 @@
+.Bento-grid-item {
+  display: flex;
+  justify-content: center;
+  gap: 1.8rem;
+  padding: 2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.2s linear;
+  @media only screen and (max-width: $bp-large) {
+    gap: 2rem;
+  }
+  @media only screen and (max-width: $bp-small) {
+    padding: 4rem;
+    align-items: center;
+    text-align: center;
+    overflow: visible;
+  }
+  @media only screen and (max-width: $bp-smallest) {
+    padding: 4rem 1.4rem;
+  }
+  &__post {
+    background-color: var(--color-primary-Yellow);
+    flex-direction: column;
+    .highlighted-text {
+      color: var(--color-primary-Purple);
+    }
+    .post-img {
+      max-width: 100%;
+      width: 14rem;
+      height: auto;
+      @media only screen and (max-width: $bp-large) {
+        width: 12rem;
+      }
+      @media only screen and (max-width: $bp-smallest) {
+        width: 16rem;
+        height: auto;
+      }
+    }
+  }
+
+  &__social-media {
+    background-color: var(--color-primary-Purple);
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 5rem;
+    @media only screen and (max-width: $bp-smallest) {
+      padding: 4rem 1.4rem;
+    }
+    .highlighted-text {
+      color: var(--color-Yellow);
+    }
+    .five-stars-img {
+      max-width: 100%;
+      width: 20rem;
+      height: auto;
+      margin-bottom: -1rem;
+      @media only screen and (max-width: $bp-large) {
+        width: 16rem;
+      }
+      @media only screen and (max-width: $bp-smallest) {
+        width: 18rem;
+        height: auto;
+      }
+    }
+  }
+
+  &__Schedule-social-media {
+    background-color: var(--color-primary-Purple-b);
+    flex-direction: column;
+    align-items: center;
+    p {
+      color: var(--color-Black);
+    }
+    .schedule-social-media-posts-img {
+      margin-right: -10rem;
+      width: 32rem;
+      height: auto;
+      @media only screen and (max-width: $bp-large) {
+        width: 24rem;
+        margin-right: -8rem;
+      }
+      @media only screen and (max-width: $bp-smallest) {
+        width: 26rem;
+        height: auto;
+        margin-right: 0;
+      }
+    }
+  }
+
+  &__multiple-account {
+    background-color: var(--color-White);
+    flex-direction: column;
+    align-items: center;
+    .multiple-platforms-img {
+      margin-right: -8rem;
+      width: 30rem;
+      height: auto;
+      @media only screen and (max-width: $bp-large) {
+        width: 22rem;
+      }
+      @media only screen and (max-width: $bp-smallest) {
+        width: 27rem;
+        height: auto;
+        margin-right: 0;
+      }
+    }
+  }
+
+  &__schedule-posts {
+    background-color: var(--color-Yellow);
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    .schedule-posts-img {
+      margin-bottom: -9rem;
+      width: 22rem;
+      height: auto;
+      @media only screen and (max-width: $bp-large) {
+        width: 16rem;
+        margin-bottom: -7rem;
+      }
+      @media only screen and (max-width: $bp-smallest) {
+        width: 22rem;
+        height: auto;
+        margin-bottom: 0rem;
+      }
+    }
+  }
+  &__using-AI {
+    background-color: var(--color-Yellow);
+    gap: 3rem;
+    align-items: center;
+    flex-direction: column;
+    .AI-img {
+      width: 22rem;
+      height: auto;
+      @media only screen and (max-width: $bp-large) {
+        width: 18rem;
+      }
+      @media only screen and (max-width: $bp-smallest) {
+        width: 26rem;
+      }
+    }
+  }
+  &__audience-growth {
+    background-color: var(--color-White);
+    flex-direction: column;
+    .audience-growth-img {
+      width: 20rem;
+      height: auto;
+      margin-top: 1rem;
+      @media only screen and (max-width: $bp-large) {
+        width: 16rem;
+      }
+      @media only screen and (max-width: $bp-smallest) {
+        width: 26rem;
+      }
+    }
+    p {
+      color: var(--color-Black);
+    }
+  }
+  &__followers-growth {
+    background-color: var(--color-primary-Purple);
+    align-items: center;
+    @media only screen and (max-width: $bp-small) {
+      flex-direction: column;
+    }
+    .followers-growth-img {
+      width: 22rem;
+      height: auto;
+      @media only screen and (max-width: $bp-large) {
+        width: 14rem;
+      }
+      @media only screen and (max-width: $bp-smallest) {
+        width: 26rem;
+      }
+    }
+  }
+  &:hover {
+    transform: scale(1.03);
+  }
+}
